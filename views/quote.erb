@@ -1,0 +1,10 @@
+<p>Hello, <%= @user.username %>...</p>
+<h1>These are the quotes you like!</h1>
+<ul>
+  <% @quotes.each do |quote| %>
+    <li>
+      <%= quote['quote'] %> - <%= quote['author']['name'] %>
+    </li>
+  <% end %>
+</ul>
+
